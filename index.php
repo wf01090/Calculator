@@ -6,6 +6,7 @@
 </head>
 <body>
     <main>
+        <form>
         <table>
             <tr>
                 <td>hi</td>
@@ -13,7 +14,7 @@
             
             
         </table>
-        
+        </form>
     </main>
 </body>
 </html>
