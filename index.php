@@ -7,9 +7,14 @@
 <body>
     <main>
         <form>
+            <input type="text" id="in-out" >
         <table>
             <tr>
-                <td>hi</td>
+                <td><input type="button" id="clear" value="C"></td>
+                <td><input type="button" id="del" value="Del">
+            </tr>
+            <tr>
+                
             </tr>
             
             
