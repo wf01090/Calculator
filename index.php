@@ -3,6 +3,7 @@
     <meta charset="utf-8" name="author" content="William Forrester">
     <title>Forrester_Calculator</title>
     <link href="frameworks/css/css.css" rel="stylesheet">
+    <script src="js/javascritp.js"></script>
 </head>
 <body>
     <main>
