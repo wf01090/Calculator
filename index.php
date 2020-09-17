@@ -11,7 +11,7 @@
         <table>
             <tr>
                 <td id="r1" colspan="2"><input type="button" id="clear" value="C"></td>
-                <td id="r1" colspan="2"><input type="button" id="del" value="Del"></td>
+                <td id="r1" colspan="2"><input type="button" id="eql" value="="></td>
             </tr>
             <tr>
                 <td id="r2"><input type="button" id="7" value="7"></td>
