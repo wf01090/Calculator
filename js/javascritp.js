@@ -30,15 +30,17 @@ clear.addEventListener("click", function(){clearInput()}, false);
 eql.addEventListener("click", function(){equals()}, false);
 point.addEventListener("click", function(){textboxInput(point.value)}, false);
 plus.addEventListener("click", function(){addOpp(plus.value)}, false);
-minus.addEventListener("click", function(){addOpp(minus.value)}, false);
+minus.addEventListener("click", function(){textboxInput(minus.value)}, false);
 times.addEventListener("click", function(){addOpp(times.value)}, false);
 divide.addEventListener("click", function(){addOpp(divide.value)}, false);
 power.addEventListener("click", function(){textboxInput("**")}, false);
 function textboxInput(x){
     var y = String(document.getElementById("in-out").value);
     if (document.getElementById("in-out").value === "0"){
-        if (x === "."){
+        if (x === "." || x === "**"){
             var z = y + String(x);
+        }else if(x === "-"){
+            var z = x;
         }else{
             var z = x;
         }
@@ -61,4 +63,9 @@ function equals(){
     var y = eval(document.getElementById("in-out").value);
     console.log(document.getElementById("in-out").value)
     document.getElementById("in-out").value = y;
+    if(document.getElementById("in-out").value === "Infinity"){
+        alert("You cannot divide by zero");
+        document.getElementById("in-out").value = 0;
+    }
 }
+
